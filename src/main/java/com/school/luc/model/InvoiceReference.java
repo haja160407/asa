@@ -1,0 +1,6 @@
+﻿package com.school.luc.model;
+
+import java.time.YearMonth;
+
+public record InvoiceReference(
+    String id, YearMonth yearMonth, Integer autoincrement, Worker worker) {}
