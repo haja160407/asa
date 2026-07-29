@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.oauth2.client.web.HttpCookieOAuth2AuthorizationRequestRepository;
 import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
@@ -22,6 +21,7 @@ public class SecurityConfig {
   private final String asaLogoutUrl;
   private final OAuth2SuccessHandler oAuth2SuccessHandler;
   private final Oauth2StatePaddingFixFilter statePaddingFixFilter;
+  private final CookieOAuth2AuthorizationRequestRepository cookieAuthorizationRequestRepository;
 
   public SecurityConfig(
       @Value("${spring.security.oauth2.client.registration.casdoor.clientid}")
@@ -29,17 +29,14 @@ public class SecurityConfig {
       @Value("${casdoor.logout.url}") String casdoorLogoutUrl,
       @Value("${asa.logout.url}") String asaLogoutUrl,
       OAuth2SuccessHandler oAuth2SuccessHandler,
-      Oauth2StatePaddingFixFilter statePaddingFixFilter) {
+      Oauth2StatePaddingFixFilter statePaddingFixFilter,
+      CookieOAuth2AuthorizationRequestRepository cookieAuthorizationRequestRepository) {
     this.casdoorClientId = casdoorClientId;
     this.casdoorLogoutUrl = casdoorLogoutUrl;
     this.asaLogoutUrl = asaLogoutUrl;
     this.oAuth2SuccessHandler = oAuth2SuccessHandler;
     this.statePaddingFixFilter = statePaddingFixFilter;
-  }
-
-  @Bean
-  public HttpCookieOAuth2AuthorizationRequestRepository cookieAuthorizationRequestRepository() {
-    return new HttpCookieOAuth2AuthorizationRequestRepository();
+    this.cookieAuthorizationRequestRepository = cookieAuthorizationRequestRepository;
   }
 
   @Bean
@@ -62,7 +59,7 @@ public class SecurityConfig {
                     .authorizationEndpoint(
                         auth ->
                             auth.authorizationRequestRepository(
-                                cookieAuthorizationRequestRepository()))
+                                cookieAuthorizationRequestRepository))
                     .successHandler(
                         (request, response, authentication) -> {
                           log.info("✅ OAuth2 login SUCCESS");
@@ -75,7 +72,6 @@ public class SecurityConfig {
                         (request, response, exception) -> {
                           log.error("❌ OAuth2 login FAILURE", exception);
                           log.error("Message: {}", exception.getMessage());
-                          // Ne pas relancer le flux OAuth (évite la boucle)
                           response.sendRedirect("/?error=oauth_failed");
                         }))
         .logout(
