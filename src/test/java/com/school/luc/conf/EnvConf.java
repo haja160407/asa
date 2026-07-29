@@ -10,8 +10,11 @@ public class EnvConf {
   void configureProperties(DynamicPropertyRegistry registry) {
     registry.add("asa.care.product.code", () -> DUMMY_CARE_PRODUCT_CODE);
     registry.add("asa.paid.care.mission.codes", () -> DUMMY_PAID_CARE_MISSION_CODES);
-    registry.add("spring.security.oauth2.client.provider.casdoor.authorization-uri", () -> "dummy");
-    registry.add("spring.security.oauth2.client.provider.casdoor.token-uri", () -> "dummy");
+    registry.add("spring.security.oauth2.client.provider.casdoor.issuer-uri", () -> "");
+    registry.add("spring.security.oauth2.client.provider.casdoor.authorization-uri", () -> "http://dummy");
+    registry.add("spring.security.oauth2.client.provider.casdoor.token-uri", () -> "http://dummy");
+    registry.add("spring.security.oauth2.client.provider.casdoor.user-info-uri", () -> "http://dummy");
+    registry.add("spring.security.oauth2.client.provider.casdoor.jwk-set-uri", () -> "http://dummy");
     registry.add("spring.security.oauth2.client.registration.casdoor.provider", () -> "casdoor");
     registry.add("spring.security.oauth2.client.registration.casdoor.client-id", () -> "dummy");
     registry.add(
