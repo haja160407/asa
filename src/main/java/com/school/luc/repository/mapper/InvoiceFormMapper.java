@@ -1,0 +1,35 @@
+﻿package com.school.luc.repository.mapper;
+
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
+import com.school.luc.model.InvoiceForm;
+import com.school.luc.repository.jrepository.JInvoiceReferenceRepository;
+import com.school.luc.repository.model.JInvoiceForm;
+
+@AllArgsConstructor
+@Component
+public class InvoiceFormMapper {
+  private final JInvoiceReferenceRepository jInvoiceReferenceRepository;
+
+  public JInvoiceForm toEntity(InvoiceForm invoiceForm) {
+    var jInvoice = new JInvoiceForm();
+    var jInvoiceReference = jInvoiceReferenceRepository.getReferenceById(invoiceForm.id());
+    jInvoice.setId(invoiceForm.id());
+    jInvoice.setYearMonth(invoiceForm.yearMonth().toString());
+    jInvoice.setReferenceDate(invoiceForm.referenceDate());
+    jInvoice.setIssueDate(invoiceForm.issueDate());
+    jInvoice.setDescription(invoiceForm.description());
+    jInvoice.setUnitPrice(invoiceForm.unitPrice());
+    jInvoice.setAmount(invoiceForm.amount());
+    jInvoice.setHasUpgradedLevel(invoiceForm.hasUpgradedLevel());
+    jInvoice.setExtraDescription(invoiceForm.extraDescription());
+    jInvoice.setExtraQuantity(invoiceForm.extraQuantity());
+    jInvoice.setExtraUnitPrice(invoiceForm.extraUnitPrice());
+    jInvoice.setExtraAmount(invoiceForm.extraAmount());
+    jInvoice.setTotal(invoiceForm.total());
+    jInvoice.setParsedAmount(invoiceForm.parsedAmount());
+    jInvoice.setRib(invoiceForm.rib());
+    jInvoice.setInvoiceReference(jInvoiceReference);
+    return jInvoice;
+  }
+}
