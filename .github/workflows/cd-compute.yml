@@ -86,7 +86,7 @@ jobs:
           curl -X GET -o template.yml "$(echo $response | jq -r '.build_template_file_uri')"
 
       - name: Build project
-        run: GRADLE_OPTS="-Dskip.tests=true -Dorg.gradle.project.skip.tests=true" sam build
+        run: sam build
 
       - name: Prepare Poja deployment
         run: |
