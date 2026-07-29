@@ -1,13 +1,9 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static school.hei.asa.model.contract.ContractType.studentContractor;
 
-import java.time.Duration;
-import java.time.Instant;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import com.school.luc.model.DailyExecution;
 import com.school.luc.model.Worker;
 import com.school.luc.model.contract.Contract;
@@ -16,6 +12,10 @@ import com.school.luc.repository.DailyExecutionRepository;
 import com.school.luc.repository.model.JContract;
 import com.school.luc.repository.model.JContractLevel;
 import com.school.luc.repository.model.JWorker;
+import java.time.Duration;
+import java.time.Instant;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class ContractMapperTest {
 

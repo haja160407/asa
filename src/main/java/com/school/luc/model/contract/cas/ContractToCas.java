@@ -1,7 +1,8 @@
-﻿package com.school.luc.model.contract.cas;
+package com.school.luc.model.contract.cas;
 
 import static java.time.LocalDate.now;
 
+import com.school.luc.model.contract.Contract;
 import gen.patrimoine.cas.Cas;
 import gen.patrimoine.modele.Devise;
 import gen.patrimoine.modele.Personne;
@@ -10,7 +11,6 @@ import java.time.LocalDate;
 import java.util.Map;
 import java.util.function.Function;
 import lombok.AllArgsConstructor;
-import com.school.luc.model.contract.Contract;
 
 @AllArgsConstructor
 public class ContractToCas implements Function<Contract, Cas> {

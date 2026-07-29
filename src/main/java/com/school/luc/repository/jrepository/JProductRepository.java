@@ -1,8 +1,8 @@
-﻿package com.school.luc.repository.jrepository;
+package com.school.luc.repository.jrepository;
 
+import com.school.luc.repository.model.JProduct;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.school.luc.repository.model.JProduct;
 
 public interface JProductRepository extends JpaRepository<JProduct, String> {
   @Override

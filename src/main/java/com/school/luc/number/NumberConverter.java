@@ -1,4 +1,4 @@
-﻿package com.school.luc.number;
+package com.school.luc.number;
 
 import static com.ibm.icu.text.RuleBasedNumberFormat.SPELLOUT;
 import static java.util.Locale.FRENCH;

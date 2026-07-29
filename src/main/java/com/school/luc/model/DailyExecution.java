@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 import static school.hei.asa.model.DailyExecution.Type.fullCare;
 import static school.hei.asa.model.DailyExecution.Type.fullWork;

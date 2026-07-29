@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 public record BankAccount(
     String bank, String agency, String account, String key, String iban, Worker worker) {

@@ -1,12 +1,12 @@
-﻿package com.school.luc.unit;
+package com.school.luc.unit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import com.school.luc.endpoint.event.model.NearOverdueReportNotificationRequested;
 import java.time.Duration;
 import java.time.LocalDate;
 import org.junit.jupiter.api.Test;
-import com.school.luc.endpoint.event.model.NearOverdueReportNotificationRequested;
 
 class NearOverdueReportNotificationRequestedTest {
 

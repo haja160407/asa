@@ -1,17 +1,17 @@
-﻿package com.school.luc.repository;
+package com.school.luc.repository;
 
-import jakarta.transaction.Transactional;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.util.List;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Component;
 import com.school.luc.model.MissionExecution;
 import com.school.luc.model.Worker;
 import com.school.luc.repository.jrepository.JMissionExecutionRepository;
 import com.school.luc.repository.mapper.MissionExecutionMapper;
 import com.school.luc.repository.mapper.WorkerMapper;
 import com.school.luc.repository.model.WorkerDayPercentageSummary;
+import jakarta.transaction.Transactional;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.util.List;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
 
 @AllArgsConstructor
 @Component

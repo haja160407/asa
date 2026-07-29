@@ -1,15 +1,15 @@
-﻿package com.school.luc.endpoint.rest.service;
+package com.school.luc.endpoint.rest.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.time.LocalDate;
-import java.util.List;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.endpoint.rest.model.th.ThMission;
 import com.school.luc.endpoint.rest.model.th.ThMissionExecution;
 import com.school.luc.endpoint.rest.model.th.ThProduct;
+import java.time.LocalDate;
+import java.util.List;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 class ThMissionServiceIT extends FacadeIT {
   @Autowired ThMissionService thMissionService;

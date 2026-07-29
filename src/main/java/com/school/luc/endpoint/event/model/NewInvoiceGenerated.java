@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.event.model;
+package com.school.luc.endpoint.event.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.time.Duration;

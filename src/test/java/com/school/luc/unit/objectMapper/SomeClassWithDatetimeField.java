@@ -1,4 +1,4 @@
-﻿package com.school.luc.unit.objectMapper;
+package com.school.luc.unit.objectMapper;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.Instant;

@@ -1,13 +1,13 @@
-﻿package com.school.luc.endpoint.rest.security;
+package com.school.luc.endpoint.rest.security;
 
+import com.school.luc.model.Worker;
+import com.school.luc.repository.WorkerRepository;
 import java.util.Optional;
 import java.util.function.Function;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
 import org.springframework.stereotype.Component;
-import com.school.luc.model.Worker;
-import com.school.luc.repository.WorkerRepository;
 
 @AllArgsConstructor
 @Component

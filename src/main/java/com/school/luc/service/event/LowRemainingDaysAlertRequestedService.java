@@ -1,16 +1,16 @@
-﻿package com.school.luc.service.event;
+package com.school.luc.service.event;
 
 import static org.reflections.Reflections.log;
 
+import com.school.luc.endpoint.event.model.LowRemainingDaysAlertRequested;
+import com.school.luc.mail.Email;
+import com.school.luc.mail.Mailer;
+import com.school.luc.service.mapper.InternetAddressMapper;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import com.school.luc.endpoint.event.model.LowRemainingDaysAlertRequested;
-import com.school.luc.mail.Email;
-import com.school.luc.mail.Mailer;
-import com.school.luc.service.mapper.InternetAddressMapper;
 
 @Service
 public class LowRemainingDaysAlertRequestedService

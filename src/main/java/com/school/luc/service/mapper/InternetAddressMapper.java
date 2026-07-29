@@ -1,4 +1,4 @@
-﻿package com.school.luc.service.mapper;
+package com.school.luc.service.mapper;
 
 import jakarta.mail.internet.InternetAddress;
 import java.util.List;

@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.controller;
+package com.school.luc.endpoint.rest.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -7,6 +7,13 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.endpoint.rest.security.WorkerFromAuthentication;
+import com.school.luc.model.Mission;
+import com.school.luc.model.Product;
+import com.school.luc.model.Worker;
+import com.school.luc.repository.MissionRepository;
+import com.school.luc.repository.ProductRepository;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -21,13 +28,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.ui.Model;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.endpoint.rest.security.WorkerFromAuthentication;
-import com.school.luc.model.Mission;
-import com.school.luc.model.Product;
-import com.school.luc.model.Worker;
-import com.school.luc.repository.MissionRepository;
-import com.school.luc.repository.ProductRepository;
 
 @Slf4j
 public class MissionControllerIT extends FacadeIT {

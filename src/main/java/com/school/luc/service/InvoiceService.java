@@ -1,4 +1,4 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static java.time.LocalDate.now;
 import static java.time.ZoneOffset.UTC;
@@ -7,15 +7,6 @@ import static java.util.Comparator.naturalOrder;
 import static school.hei.asa.number.NullToBigDecimalHanlder.toBigDecimalOrZero;
 import static school.hei.asa.number.NullToBigDecimalHanlder.toDoubleOrZero;
 
-import jakarta.transaction.Transactional;
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.YearMonth;
-import java.util.*;
-import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
 import com.school.luc.endpoint.event.EventProducer;
 import com.school.luc.endpoint.event.model.NewInvoiceGenerated;
 import com.school.luc.model.BankAccount;
@@ -31,6 +22,15 @@ import com.school.luc.repository.ContractRepository;
 import com.school.luc.repository.InvoiceFormRepository;
 import com.school.luc.repository.InvoiceReferenceRepository;
 import com.school.luc.repository.MissionExecutionRepository;
+import jakarta.transaction.Transactional;
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.YearMonth;
+import java.util.*;
+import lombok.AllArgsConstructor;
+import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 @Slf4j
 @AllArgsConstructor

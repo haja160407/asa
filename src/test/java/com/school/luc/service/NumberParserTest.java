@@ -1,10 +1,10 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.school.luc.number.NumberParser;
 import java.math.BigDecimal;
 import org.junit.jupiter.api.Test;
-import com.school.luc.number.NumberParser;
 
 public class NumberParserTest {
 

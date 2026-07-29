@@ -1,4 +1,4 @@
-﻿package com.school.luc.file;
+package com.school.luc.file;
 
 import java.util.function.Function;
 import lombok.SneakyThrows;

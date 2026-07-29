@@ -1,4 +1,4 @@
-﻿package com.school.luc.conf;
+package com.school.luc.conf;
 
 import org.springframework.test.context.DynamicPropertyRegistry;
 

@@ -1,10 +1,10 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Component;
 import com.school.luc.model.InvoiceForm;
 import com.school.luc.repository.jrepository.JInvoiceReferenceRepository;
 import com.school.luc.repository.model.JInvoiceForm;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
 
 @AllArgsConstructor
 @Component

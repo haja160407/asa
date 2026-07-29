@@ -1,8 +1,9 @@
-﻿package com.school.luc.model.contract.cas;
+package com.school.luc.model.contract.cas;
 
 import static gen.patrimoine.modele.Devise.MGA;
 import static java.util.stream.Collectors.toSet;
 
+import com.school.luc.model.contract.Contract;
 import gen.patrimoine.cas.Cas;
 import gen.patrimoine.cas.CasSet;
 import gen.patrimoine.cas.CasSetAnalyzer;
@@ -16,7 +17,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import lombok.Getter;
-import com.school.luc.model.contract.Contract;
 
 public class ContractsToCasSet implements Function<Set<Contract>, CasSet> {
 

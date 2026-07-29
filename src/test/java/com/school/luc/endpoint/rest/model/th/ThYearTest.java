@@ -1,14 +1,14 @@
-﻿package com.school.luc.endpoint.rest.model.th;
+package com.school.luc.endpoint.rest.model.th;
 
 import static java.time.Month.DECEMBER;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.school.luc.model.Mission;
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.util.List;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
-import com.school.luc.model.Mission;
 
 class ThYearTest {
 

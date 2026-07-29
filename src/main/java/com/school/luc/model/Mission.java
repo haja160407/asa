@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 import static java.util.stream.Collectors.toSet;
 import static school.hei.asa.model.Mission.Type.paidCare;

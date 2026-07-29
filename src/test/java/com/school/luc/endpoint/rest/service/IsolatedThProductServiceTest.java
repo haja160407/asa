@@ -1,7 +1,11 @@
-﻿package com.school.luc.endpoint.rest.service;
+package com.school.luc.endpoint.rest.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.endpoint.rest.model.th.ThMission;
+import com.school.luc.endpoint.rest.model.th.ThMissionExecution;
+import com.school.luc.endpoint.rest.model.th.ThProduct;
 import java.time.LocalDate;
 import java.util.List;
 import org.junit.jupiter.api.AfterEach;
@@ -11,10 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.endpoint.rest.model.th.ThMission;
-import com.school.luc.endpoint.rest.model.th.ThMissionExecution;
-import com.school.luc.endpoint.rest.model.th.ThProduct;
 
 public class IsolatedThProductServiceTest extends FacadeIT {
   @Autowired private ThProductService thProductService;

@@ -1,12 +1,12 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
+import com.school.luc.model.InvoiceReference;
+import com.school.luc.repository.model.JInvoiceReference;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import com.school.luc.model.InvoiceReference;
-import com.school.luc.repository.model.JInvoiceReference;
 
 @Slf4j
 @Component

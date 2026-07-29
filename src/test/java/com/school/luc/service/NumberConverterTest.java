@@ -1,9 +1,9 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Test;
 import com.school.luc.number.NumberConverter;
+import org.junit.jupiter.api.Test;
 
 public class NumberConverterTest {
 

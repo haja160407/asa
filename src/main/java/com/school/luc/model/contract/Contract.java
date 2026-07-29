@@ -1,8 +1,8 @@
-﻿package com.school.luc.model.contract;
+package com.school.luc.model.contract;
 
+import com.school.luc.model.Worker;
 import java.time.Duration;
 import java.time.Instant;
-import com.school.luc.model.Worker;
 
 public record Contract(
     Worker worker,

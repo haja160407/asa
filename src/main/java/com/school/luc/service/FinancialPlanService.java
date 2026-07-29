@@ -1,10 +1,20 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static gen.patrimoine.modele.Devise.MGA;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toMap;
 
+import com.school.luc.model.BankAccount;
+import com.school.luc.model.FinancialPlan;
+import com.school.luc.model.InvoiceForm;
+import com.school.luc.model.MissionExecution;
+import com.school.luc.model.contract.Contract;
+import com.school.luc.model.contract.cas.ContractsToCasSet;
+import com.school.luc.repository.BankAccountRepository;
+import com.school.luc.repository.ContractRepository;
+import com.school.luc.repository.MissionExecutionRepository;
+import com.school.luc.repository.WorkerRepository;
 import gen.patrimoine.cas.Cas;
 import gen.patrimoine.modele.Argent;
 import jakarta.transaction.Transactional;
@@ -21,16 +31,6 @@ import java.util.UUID;
 import java.util.function.Function;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import com.school.luc.model.BankAccount;
-import com.school.luc.model.FinancialPlan;
-import com.school.luc.model.InvoiceForm;
-import com.school.luc.model.MissionExecution;
-import com.school.luc.model.contract.Contract;
-import com.school.luc.model.contract.cas.ContractsToCasSet;
-import com.school.luc.repository.BankAccountRepository;
-import com.school.luc.repository.ContractRepository;
-import com.school.luc.repository.MissionExecutionRepository;
-import com.school.luc.repository.WorkerRepository;
 
 @AllArgsConstructor
 @Service

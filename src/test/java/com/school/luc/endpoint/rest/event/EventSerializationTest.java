@@ -1,13 +1,13 @@
-﻿package com.school.luc.endpoint.rest.event;
+package com.school.luc.endpoint.rest.event;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.school.luc.endpoint.event.model.NewInvoiceGenerated;
 import java.time.Duration;
 import org.junit.jupiter.api.Test;
-import com.school.luc.endpoint.event.model.NewInvoiceGenerated;
 
 public class EventSerializationTest {
   ObjectMapper om = new ObjectMapper();

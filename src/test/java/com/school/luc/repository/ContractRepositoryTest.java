@@ -1,13 +1,13 @@
-﻿package com.school.luc.repository;
+package com.school.luc.repository;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.model.Worker;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.model.Worker;
 
 @Slf4j
 public class ContractRepositoryTest extends FacadeIT {

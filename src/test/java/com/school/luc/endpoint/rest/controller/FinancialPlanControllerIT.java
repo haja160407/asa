@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.controller;
+package com.school.luc.endpoint.rest.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
@@ -7,6 +7,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.model.FinancialPlan;
+import com.school.luc.service.FinancialPlanService;
 import gen.patrimoine.modele.Argent;
 import gen.patrimoine.modele.Devise;
 import java.time.Month;
@@ -17,9 +20,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.ui.Model;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.model.FinancialPlan;
-import com.school.luc.service.FinancialPlanService;
 
 class FinancialPlanControllerIT extends FacadeIT {
 

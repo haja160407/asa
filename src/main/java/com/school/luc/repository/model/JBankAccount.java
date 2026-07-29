@@ -1,4 +1,4 @@
-﻿package com.school.luc.repository.model;
+package com.school.luc.repository.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,17 +1,9 @@
-﻿package com.school.luc.endpoint.rest.service;
+package com.school.luc.endpoint.rest.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Optional;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.security.core.Authentication;
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.endpoint.rest.model.th.ThMission;
 import com.school.luc.endpoint.rest.model.th.ThMissionExecution;
@@ -23,6 +15,14 @@ import com.school.luc.model.Worker;
 import com.school.luc.repository.MissionRepository;
 import com.school.luc.repository.ProductRepository;
 import com.school.luc.repository.WorkerRepository;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.core.Authentication;
 
 class ThProductServiceIT extends FacadeIT {
   @Autowired ThProductService thProductService;

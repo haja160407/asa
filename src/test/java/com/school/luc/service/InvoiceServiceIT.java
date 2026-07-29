@@ -1,4 +1,4 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -10,6 +10,15 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 import static school.hei.asa.model.contract.ContractType.studentContractor;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.model.BankAccount;
+import com.school.luc.model.InvoiceForm;
+import com.school.luc.model.InvoiceReference;
+import com.school.luc.model.Worker;
+import com.school.luc.model.contract.Contract;
+import com.school.luc.model.contract.ContractLevel;
+import com.school.luc.repository.BankAccountRepository;
+import com.school.luc.repository.ContractRepository;
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.Instant;
@@ -22,15 +31,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.model.BankAccount;
-import com.school.luc.model.InvoiceForm;
-import com.school.luc.model.InvoiceReference;
-import com.school.luc.model.Worker;
-import com.school.luc.model.contract.Contract;
-import com.school.luc.model.contract.ContractLevel;
-import com.school.luc.repository.BankAccountRepository;
-import com.school.luc.repository.ContractRepository;
 
 public class InvoiceServiceIT extends FacadeIT {
 

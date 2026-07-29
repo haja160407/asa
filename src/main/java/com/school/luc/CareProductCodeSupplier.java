@@ -1,4 +1,4 @@
-﻿package com.school.luc;
+package com.school.luc;
 
 import java.util.function.Supplier;
 import lombok.experimental.Accessors;

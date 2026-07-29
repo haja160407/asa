@@ -1,4 +1,4 @@
-﻿package com.school.luc.model.contract.cas;
+package com.school.luc.model.contract.cas;
 
 import static gen.patrimoine.modele.Devise.MGA;
 import static java.time.Month.APRIL;
@@ -13,6 +13,9 @@ import static school.hei.asa.model.contract.ContractType.fullTimeEmployee;
 import static school.hei.asa.model.contract.ContractType.partnerContractor;
 import static school.hei.asa.model.contract.ContractType.studentContractor;
 
+import com.school.luc.model.Worker;
+import com.school.luc.model.contract.Contract;
+import com.school.luc.model.contract.ContractLevel;
 import gen.patrimoine.modele.Argent;
 import gen.patrimoine.modele.possession.Compte;
 import java.time.Duration;
@@ -21,9 +24,6 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
-import com.school.luc.model.Worker;
-import com.school.luc.model.contract.Contract;
-import com.school.luc.model.contract.ContractLevel;
 
 public class ContractToCasTest {
 

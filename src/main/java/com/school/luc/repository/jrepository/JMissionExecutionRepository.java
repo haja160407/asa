@@ -1,5 +1,7 @@
-﻿package com.school.luc.repository.jrepository;
+package com.school.luc.repository.jrepository;
 
+import com.school.luc.repository.model.JMissionExecution;
+import com.school.luc.repository.model.WorkerDayPercentageSummary;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.List;
@@ -7,8 +9,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import com.school.luc.repository.model.JMissionExecution;
-import com.school.luc.repository.model.WorkerDayPercentageSummary;
 
 @Repository
 public interface JMissionExecutionRepository extends JpaRepository<JMissionExecution, String> {

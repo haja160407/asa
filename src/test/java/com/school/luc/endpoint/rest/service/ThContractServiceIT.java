@@ -1,7 +1,8 @@
-﻿package com.school.luc.endpoint.rest.service;
+package com.school.luc.endpoint.rest.service;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.school.luc.conf.FacadeIT;
 import java.nio.file.Files;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -12,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import com.school.luc.conf.FacadeIT;
 
 @Slf4j
 class ThContractServiceIT extends FacadeIT {

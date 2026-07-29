@@ -1,11 +1,11 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
+import com.school.luc.model.Product;
+import com.school.luc.repository.ProductRepository;
 import jakarta.transaction.Transactional;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import com.school.luc.model.Product;
-import com.school.luc.repository.ProductRepository;
 
 @Service
 @AllArgsConstructor

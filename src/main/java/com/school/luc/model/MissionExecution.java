@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 import java.time.Instant;
 import java.time.LocalDate;

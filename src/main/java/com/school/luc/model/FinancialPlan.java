@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 import static java.time.LocalDate.now;
 import static java.time.Month.APRIL;
@@ -15,11 +15,11 @@ import static java.time.Month.OCTOBER;
 import static java.time.Month.SEPTEMBER;
 import static java.util.stream.Collectors.joining;
 
+import com.school.luc.model.contract.Contract;
 import gen.patrimoine.modele.Argent;
 import java.time.Month;
 import java.util.HashMap;
 import java.util.Map;
-import com.school.luc.model.contract.Contract;
 
 public record FinancialPlan(
     Map<Month, Argent> plannedCost,

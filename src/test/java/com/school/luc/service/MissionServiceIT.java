@@ -1,16 +1,9 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.util.List;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import com.school.luc.CareProductCodeSupplier;
 import com.school.luc.PaidCareMissionCodesSupplier;
 import com.school.luc.conf.FacadeIT;
@@ -18,6 +11,13 @@ import com.school.luc.model.Mission;
 import com.school.luc.model.MissionExecution;
 import com.school.luc.model.Product;
 import com.school.luc.model.Worker;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.util.List;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 class MissionServiceIT extends FacadeIT {
 

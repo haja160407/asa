@@ -1,17 +1,17 @@
-﻿package com.school.luc.repository;
+package com.school.luc.repository;
 
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.model.InvoiceReference;
+import com.school.luc.model.Worker;
 import java.time.YearMonth;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.model.InvoiceReference;
-import com.school.luc.model.Worker;
 
 @Slf4j
 public class InvoiceReferenceRepositoryTest extends FacadeIT {

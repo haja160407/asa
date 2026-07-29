@@ -1,9 +1,13 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import com.school.luc.model.InvoiceForm;
+import com.school.luc.repository.jrepository.JInvoiceReferenceRepository;
+import com.school.luc.repository.model.JInvoiceForm;
+import com.school.luc.repository.model.JInvoiceReference;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -12,10 +16,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import com.school.luc.model.InvoiceForm;
-import com.school.luc.repository.jrepository.JInvoiceReferenceRepository;
-import com.school.luc.repository.model.JInvoiceForm;
-import com.school.luc.repository.model.JInvoiceReference;
 
 @ExtendWith(MockitoExtension.class)
 class InvoiceFormMapperTest {

@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.service;
+package com.school.luc.endpoint.rest.service;
 
 import static java.time.Month.DECEMBER;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -9,14 +9,6 @@ import static school.hei.asa.model.DailyExecution.Type.fullCare;
 import static school.hei.asa.model.DailyExecution.Type.fullWork;
 import static school.hei.asa.model.DailyExecution.Type.mixedWorkAndCare;
 
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Optional;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.security.core.Authentication;
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.endpoint.rest.controller.DailyExecutionController;
 import com.school.luc.endpoint.rest.model.th.ThDailyExecutionForm;
@@ -29,6 +21,14 @@ import com.school.luc.repository.MissionRepository;
 import com.school.luc.repository.ProductRepository;
 import com.school.luc.repository.WorkerRepository;
 import com.school.luc.service.CalendarService;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.core.Authentication;
 
 class CalendarServiceIT extends FacadeIT {
   @Autowired DailyExecutionController dailyExecutionController;

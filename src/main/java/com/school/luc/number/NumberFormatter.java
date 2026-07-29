@@ -1,4 +1,4 @@
-﻿package com.school.luc.number;
+package com.school.luc.number;
 
 import org.springframework.stereotype.Component;
 

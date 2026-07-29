@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

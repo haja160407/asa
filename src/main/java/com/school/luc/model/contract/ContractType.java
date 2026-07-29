@@ -1,4 +1,4 @@
-﻿package com.school.luc.model.contract;
+package com.school.luc.model.contract;
 
 public enum ContractType {
   partnerContractor,

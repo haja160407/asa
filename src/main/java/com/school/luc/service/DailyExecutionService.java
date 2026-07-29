@@ -1,9 +1,9 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
 import com.school.luc.model.DailyExecution;
 import com.school.luc.repository.DailyExecutionRepository;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor

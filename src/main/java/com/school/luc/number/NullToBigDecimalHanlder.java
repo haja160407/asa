@@ -1,4 +1,4 @@
-﻿package com.school.luc.number;
+package com.school.luc.number;
 
 import java.math.BigDecimal;
 

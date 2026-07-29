@@ -1,11 +1,11 @@
-﻿package com.school.luc.repository;
+package com.school.luc.repository;
 
-import jakarta.transaction.Transactional;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Repository;
 import com.school.luc.model.InvoiceForm;
 import com.school.luc.repository.jrepository.JInvoiceDataRepository;
 import com.school.luc.repository.mapper.InvoiceFormMapper;
+import jakarta.transaction.Transactional;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Repository;
 
 @Repository
 @AllArgsConstructor

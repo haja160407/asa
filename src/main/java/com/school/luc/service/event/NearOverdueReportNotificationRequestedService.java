@@ -1,10 +1,18 @@
-﻿package com.school.luc.service.event;
+package com.school.luc.service.event;
 
 import static java.time.DayOfWeek.MONDAY;
 import static java.time.DayOfWeek.SATURDAY;
 import static java.time.DayOfWeek.SUNDAY;
 import static org.reflections.Reflections.log;
 
+import com.school.luc.endpoint.event.model.NearOverdueReportNotificationRequested;
+import com.school.luc.mail.Email;
+import com.school.luc.mail.Mailer;
+import com.school.luc.model.Worker;
+import com.school.luc.model.contract.Contract;
+import com.school.luc.repository.MissionExecutionRepository;
+import com.school.luc.service.ContractService;
+import com.school.luc.service.mapper.InternetAddressMapper;
 import jakarta.mail.internet.AddressException;
 import jakarta.mail.internet.InternetAddress;
 import java.time.LocalDate;
@@ -14,14 +22,6 @@ import java.util.List;
 import java.util.function.Consumer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import com.school.luc.endpoint.event.model.NearOverdueReportNotificationRequested;
-import com.school.luc.mail.Email;
-import com.school.luc.mail.Mailer;
-import com.school.luc.model.Worker;
-import com.school.luc.model.contract.Contract;
-import com.school.luc.repository.MissionExecutionRepository;
-import com.school.luc.service.ContractService;
-import com.school.luc.service.mapper.InternetAddressMapper;
 
 @Service
 public class NearOverdueReportNotificationRequestedService

@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.event.model;
+package com.school.luc.endpoint.event.model;
 
 import java.time.Duration;
 import lombok.AllArgsConstructor;

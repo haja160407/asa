@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.controller;
+package com.school.luc.endpoint.rest.controller;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;

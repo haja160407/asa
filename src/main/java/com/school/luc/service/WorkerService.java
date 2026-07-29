@@ -1,7 +1,9 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static java.util.Comparator.comparing;
 
+import com.school.luc.model.Worker;
+import com.school.luc.repository.WorkerRepository;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -9,8 +11,6 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
-import com.school.luc.model.Worker;
-import com.school.luc.repository.WorkerRepository;
 
 @Slf4j
 @Service

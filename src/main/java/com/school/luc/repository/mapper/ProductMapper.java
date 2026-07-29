@@ -1,10 +1,10 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
+import com.school.luc.model.Product;
+import com.school.luc.repository.model.JProduct;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import com.school.luc.model.Product;
-import com.school.luc.repository.model.JProduct;
 
 @AllArgsConstructor
 @Component

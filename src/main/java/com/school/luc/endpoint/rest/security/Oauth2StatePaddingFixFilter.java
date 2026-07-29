@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.security;
+package com.school.luc.endpoint.rest.security;
 
 import static org.springframework.core.Ordered.HIGHEST_PRECEDENCE;
 

@@ -1,9 +1,9 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Component;
 import com.school.luc.model.BankAccount;
 import com.school.luc.repository.model.JBankAccount;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
 
 @Component
 @AllArgsConstructor

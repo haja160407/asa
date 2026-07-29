@@ -1,8 +1,8 @@
-﻿package com.school.luc.endpoint;
+package com.school.luc.endpoint;
 
+import com.school.luc.number.NumberConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import com.school.luc.number.NumberConverter;
 
 @Configuration
 public class ConverterConf {

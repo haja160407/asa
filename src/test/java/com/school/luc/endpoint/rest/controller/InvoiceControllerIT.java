@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.controller;
+package com.school.luc.endpoint.rest.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -6,19 +6,6 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 import static org.springframework.http.HttpStatus.OK;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.util.Optional;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.security.core.Authentication;
-import org.springframework.ui.Model;
 import com.school.luc.conf.FacadeITMockedThirdParties;
 import com.school.luc.endpoint.rest.model.th.ThInvoice;
 import com.school.luc.endpoint.rest.model.th.ThInvoiceForm;
@@ -32,6 +19,19 @@ import com.school.luc.model.BankAccount;
 import com.school.luc.model.Worker;
 import com.school.luc.repository.BankAccountRepository;
 import com.school.luc.service.InvoiceService;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.Optional;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.security.core.Authentication;
+import org.springframework.ui.Model;
 
 class InvoiceControllerIT extends FacadeITMockedThirdParties {
 

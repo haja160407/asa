@@ -1,15 +1,15 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static java.util.Locale.US;
 
+import com.school.luc.endpoint.event.EventProducer;
+import com.school.luc.endpoint.event.model.LowRemainingDaysAlertRequested;
+import com.school.luc.model.Worker;
 import java.util.List;
 import java.util.Optional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import com.school.luc.endpoint.event.EventProducer;
-import com.school.luc.endpoint.event.model.LowRemainingDaysAlertRequested;
-import com.school.luc.model.Worker;
 
 @Slf4j
 @Service

@@ -1,12 +1,12 @@
-﻿package com.school.luc.unit;
+package com.school.luc.unit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.school.luc.number.NumberFormatter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import com.school.luc.number.NumberFormatter;
 
 class NumberFormatTest {
 

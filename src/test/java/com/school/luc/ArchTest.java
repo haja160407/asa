@@ -1,4 +1,4 @@
-﻿package com.school.luc;
+package com.school.luc;
 
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 

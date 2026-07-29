@@ -1,17 +1,17 @@
-﻿package com.school.luc.endpoint.rest.mapper;
+package com.school.luc.endpoint.rest.mapper;
 
 import static java.time.LocalDate.now;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.util.List;
-import org.junit.jupiter.api.Test;
 import com.school.luc.endpoint.rest.controller.mapper.ThDailyExecutionMapper;
 import com.school.luc.endpoint.rest.model.th.ThDailyExecution;
 import com.school.luc.endpoint.rest.model.th.ThExecutionsPerMission;
 import com.school.luc.model.*;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.util.List;
+import org.junit.jupiter.api.Test;
 
 class ThDailyExecutionMapperTest {
 

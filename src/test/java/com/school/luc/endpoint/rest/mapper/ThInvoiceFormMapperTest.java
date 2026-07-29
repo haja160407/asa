@@ -1,5 +1,9 @@
-﻿package com.school.luc.endpoint.rest.mapper;
+package com.school.luc.endpoint.rest.mapper;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.endpoint.rest.controller.mapper.ThInvoiceFormMapper;
+import com.school.luc.endpoint.rest.model.th.ThInvoiceForm;
+import com.school.luc.model.InvoiceForm;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -7,10 +11,6 @@ import java.util.UUID;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.endpoint.rest.controller.mapper.ThInvoiceFormMapper;
-import com.school.luc.endpoint.rest.model.th.ThInvoiceForm;
-import com.school.luc.model.InvoiceForm;
 
 public class ThInvoiceFormMapperTest extends FacadeIT {
   @Autowired private ThInvoiceFormMapper thInvoiceFormMapper;

@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.controller;
+package com.school.luc.endpoint.rest.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -6,6 +6,14 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 import static school.hei.asa.model.contract.ContractType.studentContractor;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.endpoint.rest.model.th.ThWorker;
+import com.school.luc.endpoint.rest.model.th.WorkerModelAdderParam;
+import com.school.luc.endpoint.rest.security.WorkerFromAuthentication;
+import com.school.luc.model.Worker;
+import com.school.luc.model.contract.Contract;
+import com.school.luc.model.contract.ContractLevel;
+import com.school.luc.repository.ContractRepository;
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
@@ -15,14 +23,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.security.core.Authentication;
 import org.springframework.ui.Model;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.endpoint.rest.model.th.ThWorker;
-import com.school.luc.endpoint.rest.model.th.WorkerModelAdderParam;
-import com.school.luc.endpoint.rest.security.WorkerFromAuthentication;
-import com.school.luc.model.Worker;
-import com.school.luc.model.contract.Contract;
-import com.school.luc.model.contract.ContractLevel;
-import com.school.luc.repository.ContractRepository;
 
 class WorkerControllerIT extends FacadeIT {
 

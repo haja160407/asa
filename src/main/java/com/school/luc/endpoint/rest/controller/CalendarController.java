@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.controller;
+package com.school.luc.endpoint.rest.controller;
 
 import static java.awt.Color.BLUE;
 import static java.awt.Color.GREEN;
@@ -10,6 +10,13 @@ import static school.hei.asa.model.DailyExecution.Type.fullCare;
 import static school.hei.asa.model.DailyExecution.Type.fullWork;
 import static school.hei.asa.model.DailyExecution.Type.mixedWorkAndCare;
 
+import com.school.luc.endpoint.rest.model.th.ThYear;
+import com.school.luc.endpoint.rest.model.th.WorkerModelAdderParam;
+import com.school.luc.endpoint.rest.security.WorkerFromAuthentication;
+import com.school.luc.model.Mission;
+import com.school.luc.model.Worker;
+import com.school.luc.service.CalendarService;
+import com.school.luc.service.LowRemainingDaysAlertService;
 import java.awt.*;
 import java.time.LocalDate;
 import java.time.Month;
@@ -21,13 +28,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import com.school.luc.endpoint.rest.model.th.ThYear;
-import com.school.luc.endpoint.rest.model.th.WorkerModelAdderParam;
-import com.school.luc.endpoint.rest.security.WorkerFromAuthentication;
-import com.school.luc.model.Mission;
-import com.school.luc.model.Worker;
-import com.school.luc.service.CalendarService;
-import com.school.luc.service.LowRemainingDaysAlertService;
 
 @AllArgsConstructor
 @Controller

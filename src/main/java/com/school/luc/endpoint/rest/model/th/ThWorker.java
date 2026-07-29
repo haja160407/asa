@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.model.th;
+package com.school.luc.endpoint.rest.model.th;
 
 import java.time.Instant;
 import lombok.AllArgsConstructor;

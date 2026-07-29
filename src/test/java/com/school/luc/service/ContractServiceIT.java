@@ -1,12 +1,12 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.model.Worker;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 class ContractServiceIT extends FacadeIT {
   @Autowired ContractService contractService;

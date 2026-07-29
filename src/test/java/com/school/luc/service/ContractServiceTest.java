@@ -1,4 +1,4 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -7,13 +7,6 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import java.time.Duration;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Optional;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import com.school.luc.CareProductCodeSupplier;
 import com.school.luc.model.DailyExecution;
 import com.school.luc.model.Mission;
@@ -24,6 +17,13 @@ import com.school.luc.model.contract.Contract;
 import com.school.luc.repository.ContractRepository;
 import com.school.luc.repository.DailyExecutionRepository;
 import com.school.luc.repository.WorkerRepository;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 class ContractServiceTest {
 

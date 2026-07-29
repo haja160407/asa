@@ -1,4 +1,4 @@
-﻿package com.school.luc.datastructure;
+package com.school.luc.datastructure;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

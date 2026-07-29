@@ -1,17 +1,17 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.endpoint.event.EventProducer;
+import com.school.luc.model.Worker;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.endpoint.event.EventProducer;
-import com.school.luc.model.Worker;
 
 class LowRemainingDaysAlertServiceIT extends FacadeIT {
 

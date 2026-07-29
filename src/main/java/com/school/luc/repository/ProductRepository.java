@@ -1,12 +1,12 @@
-﻿package com.school.luc.repository;
+package com.school.luc.repository;
 
+import com.school.luc.model.Product;
+import com.school.luc.repository.jrepository.JProductRepository;
+import com.school.luc.repository.mapper.ProductMapper;
 import jakarta.transaction.Transactional;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
-import com.school.luc.model.Product;
-import com.school.luc.repository.jrepository.JProductRepository;
-import com.school.luc.repository.mapper.ProductMapper;
 
 @AllArgsConstructor
 @Repository

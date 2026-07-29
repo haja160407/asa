@@ -1,8 +1,8 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
-import org.springframework.stereotype.Component;
 import com.school.luc.model.contract.ContractLevel;
 import com.school.luc.repository.model.JContract;
+import org.springframework.stereotype.Component;
 
 @Component
 public class ContractLevelMapper {

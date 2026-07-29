@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 import static java.time.ZoneOffset.UTC;
 import static java.util.stream.Collectors.*;

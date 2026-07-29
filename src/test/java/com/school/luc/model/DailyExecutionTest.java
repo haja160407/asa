@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 import static java.lang.Double.parseDouble;
 import static java.time.LocalDate.now;

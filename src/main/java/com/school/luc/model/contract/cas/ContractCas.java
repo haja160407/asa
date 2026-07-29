@@ -1,7 +1,9 @@
-﻿package com.school.luc.model.contract.cas;
+package com.school.luc.model.contract.cas;
 
 import static java.time.ZoneId.systemDefault;
 
+import com.school.luc.model.contract.Contract;
+import com.school.luc.model.contract.ContractType;
 import gen.patrimoine.cas.Cas;
 import gen.patrimoine.modele.Argent;
 import gen.patrimoine.modele.Devise;
@@ -15,8 +17,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import lombok.extern.slf4j.Slf4j;
-import com.school.luc.model.contract.Contract;
-import com.school.luc.model.contract.ContractType;
 
 @Slf4j
 public class ContractCas extends Cas {

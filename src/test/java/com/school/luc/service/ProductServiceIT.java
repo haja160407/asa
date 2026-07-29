@@ -1,10 +1,10 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+import com.school.luc.conf.FacadeIT;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.school.luc.conf.FacadeIT;
 
 public class ProductServiceIT extends FacadeIT {
   @Autowired ProductService productService;

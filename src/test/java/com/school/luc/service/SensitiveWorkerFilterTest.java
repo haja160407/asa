@@ -1,15 +1,15 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.time.LocalDate;
-import java.util.List;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Test;
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.model.DailyExecution;
 import com.school.luc.model.MissionExecution;
 import com.school.luc.model.Worker;
+import java.time.LocalDate;
+import java.util.List;
+import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
 
 @Slf4j
 class SensitiveWorkerFilterTest extends FacadeIT {

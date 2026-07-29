@@ -1,4 +1,4 @@
-﻿package com.school.luc.model.contract.cas;
+package com.school.luc.model.contract.cas;
 
 import static gen.patrimoine.modele.Devise.MGA;
 import static java.time.Month.FEBRUARY;

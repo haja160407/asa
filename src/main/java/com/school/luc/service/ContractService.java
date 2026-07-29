@@ -1,4 +1,4 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static java.time.ZoneId.systemDefault;
 import static java.util.Locale.FRENCH;
@@ -6,6 +6,13 @@ import static java.util.Locale.US;
 import static school.hei.asa.model.DailyExecution.Type.fullCare;
 import static school.hei.asa.model.DailyExecution.Type.fullWork;
 
+import com.school.luc.CareProductCodeSupplier;
+import com.school.luc.model.DailyExecution;
+import com.school.luc.model.Worker;
+import com.school.luc.model.contract.Contract;
+import com.school.luc.repository.ContractRepository;
+import com.school.luc.repository.DailyExecutionRepository;
+import com.school.luc.repository.WorkerRepository;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -16,13 +23,6 @@ import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import com.school.luc.CareProductCodeSupplier;
-import com.school.luc.model.DailyExecution;
-import com.school.luc.model.Worker;
-import com.school.luc.model.contract.Contract;
-import com.school.luc.repository.ContractRepository;
-import com.school.luc.repository.DailyExecutionRepository;
-import com.school.luc.repository.WorkerRepository;
 
 @Slf4j
 @Service

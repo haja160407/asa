@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.model.th;
+package com.school.luc.endpoint.rest.model.th;
 
 public record ThDailyExecutionForm(
     String date,

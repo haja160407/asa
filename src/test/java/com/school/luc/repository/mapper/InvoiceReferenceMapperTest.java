@@ -1,14 +1,14 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
 import static java.time.format.DateTimeFormatter.ofPattern;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.time.YearMonth;
-import org.junit.jupiter.api.Test;
 import com.school.luc.model.InvoiceReference;
 import com.school.luc.model.Worker;
 import com.school.luc.repository.model.JInvoiceReference;
 import com.school.luc.repository.model.JWorker;
+import java.time.YearMonth;
+import org.junit.jupiter.api.Test;
 
 public class InvoiceReferenceMapperTest {
   private final InvoiceReferenceMapper invoiceReferenceMapper =

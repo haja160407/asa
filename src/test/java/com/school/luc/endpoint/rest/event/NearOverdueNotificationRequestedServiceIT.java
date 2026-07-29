@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.event;
+package com.school.luc.endpoint.rest.event;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -7,14 +7,6 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import java.time.Duration;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.util.List;
-import org.junit.jupiter.api.Test;
-import org.mockito.ArgumentCaptor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.endpoint.event.model.NearOverdueReportNotificationRequested;
 import com.school.luc.mail.Email;
@@ -24,6 +16,14 @@ import com.school.luc.model.contract.Contract;
 import com.school.luc.repository.MissionExecutionRepository;
 import com.school.luc.service.ContractService;
 import com.school.luc.service.event.NearOverdueReportNotificationRequestedService;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.util.List;
+import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 public class NearOverdueNotificationRequestedServiceIT extends FacadeIT {
 

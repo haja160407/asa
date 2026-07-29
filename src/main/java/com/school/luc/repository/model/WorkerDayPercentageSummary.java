@@ -1,4 +1,4 @@
-﻿package com.school.luc.repository.model;
+package com.school.luc.repository.model;
 
 import java.time.Instant;
 

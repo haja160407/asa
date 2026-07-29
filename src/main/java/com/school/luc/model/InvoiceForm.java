@@ -1,4 +1,4 @@
-﻿package com.school.luc.model;
+package com.school.luc.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

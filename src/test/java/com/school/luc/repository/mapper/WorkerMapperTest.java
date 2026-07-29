@@ -1,10 +1,10 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Test;
 import com.school.luc.model.Worker;
 import com.school.luc.repository.model.JWorker;
+import org.junit.jupiter.api.Test;
 
 public class WorkerMapperTest {
   private final WorkerMapper workerMapper = new WorkerMapper();

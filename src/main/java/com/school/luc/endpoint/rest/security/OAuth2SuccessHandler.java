@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.security;
+package com.school.luc.endpoint.rest.security;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,14 +1,14 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
 import static java.time.ZoneId.systemDefault;
 
+import com.school.luc.model.contract.Contract;
+import com.school.luc.repository.model.JContract;
+import com.school.luc.repository.model.JWorker;
 import java.time.Duration;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import com.school.luc.model.contract.Contract;
-import com.school.luc.repository.model.JContract;
-import com.school.luc.repository.model.JWorker;
 
 @AllArgsConstructor
 @Component

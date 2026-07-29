@@ -1,4 +1,4 @@
-﻿package com.school.luc.file;
+package com.school.luc.file;
 
 import static java.util.UUID.randomUUID;
 

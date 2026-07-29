@@ -1,7 +1,8 @@
-﻿package com.school.luc.endpoint.rest.controller;
+package com.school.luc.endpoint.rest.controller;
 
 import static java.time.LocalDate.now;
 
+import com.school.luc.service.FinancialPlanService;
 import java.time.Month;
 import java.util.Arrays;
 import lombok.AllArgsConstructor;
@@ -10,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import com.school.luc.service.FinancialPlanService;
 
 @Slf4j
 @AllArgsConstructor

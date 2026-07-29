@@ -1,16 +1,16 @@
-﻿package com.school.luc.endpoint.rest.controller.mapper;
+package com.school.luc.endpoint.rest.controller.mapper;
 
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.groupingBy;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import org.springframework.stereotype.Component;
 import com.school.luc.endpoint.rest.model.th.ThDailyExecution;
 import com.school.luc.endpoint.rest.model.th.ThExecutionsPerMission;
 import com.school.luc.model.DailyExecution;
 import com.school.luc.model.MissionExecution;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.stereotype.Component;
 
 @Component
 public class ThDailyExecutionMapper {

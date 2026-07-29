@@ -1,11 +1,11 @@
-﻿package com.school.luc.endpoint.rest.controller.mapper;
+package com.school.luc.endpoint.rest.controller.mapper;
 
-import java.util.List;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Component;
 import com.school.luc.CareProductCodeSupplier;
 import com.school.luc.endpoint.rest.model.th.ThProduct;
 import com.school.luc.model.Product;
+import java.util.List;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
 
 @AllArgsConstructor
 @Component

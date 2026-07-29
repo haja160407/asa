@@ -1,11 +1,5 @@
-﻿package com.school.luc.service.event;
+package com.school.luc.service.event;
 
-import java.io.File;
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Consumer;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
 import com.school.luc.endpoint.event.model.NewInvoiceGenerated;
 import com.school.luc.file.bucket.BucketComponent;
 import com.school.luc.mail.Email;
@@ -13,6 +7,12 @@ import com.school.luc.mail.Mailer;
 import com.school.luc.model.InvoiceReference;
 import com.school.luc.service.InvoiceService;
 import com.school.luc.service.mapper.InternetAddressMapper;
+import java.io.File;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 @Service
 public class NewInvoiceGeneratedService implements Consumer<NewInvoiceGenerated> {

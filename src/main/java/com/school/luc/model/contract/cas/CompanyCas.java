@@ -1,4 +1,4 @@
-﻿package com.school.luc.model.contract.cas;
+package com.school.luc.model.contract.cas;
 
 import gen.patrimoine.cas.Cas;
 import gen.patrimoine.modele.Devise;

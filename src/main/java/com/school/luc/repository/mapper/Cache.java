@@ -1,4 +1,4 @@
-﻿package com.school.luc.repository.mapper;
+package com.school.luc.repository.mapper;
 
 import java.util.HashMap;
 import java.util.Map;

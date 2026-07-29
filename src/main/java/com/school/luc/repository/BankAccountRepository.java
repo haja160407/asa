@@ -1,12 +1,12 @@
-﻿package com.school.luc.repository;
+package com.school.luc.repository;
 
+import com.school.luc.model.BankAccount;
+import com.school.luc.repository.jrepository.JBankAccountRepository;
+import com.school.luc.repository.mapper.BankAccountMapper;
 import jakarta.transaction.Transactional;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import com.school.luc.model.BankAccount;
-import com.school.luc.repository.jrepository.JBankAccountRepository;
-import com.school.luc.repository.mapper.BankAccountMapper;
 
 @AllArgsConstructor
 @Component

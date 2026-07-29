@@ -1,15 +1,8 @@
-﻿package com.school.luc.repository;
+package com.school.luc.repository;
 
 import static java.util.stream.Collectors.groupingBy;
 import static org.springframework.transaction.annotation.Isolation.SERIALIZABLE;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import com.school.luc.model.DailyExecution;
 import com.school.luc.model.MissionExecution;
 import com.school.luc.repository.jrepository.JMissionExecutionRepository;
@@ -17,6 +10,13 @@ import com.school.luc.repository.jrepository.JMissionRepository;
 import com.school.luc.repository.jrepository.JWorkerRepository;
 import com.school.luc.repository.mapper.MissionExecutionMapper;
 import com.school.luc.repository.model.JMissionExecution;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @AllArgsConstructor
 @Repository

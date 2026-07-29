@@ -1,4 +1,4 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -9,13 +9,6 @@ import static org.mockito.Mockito.when;
 import static school.hei.asa.model.contract.cas.ContractToCasTest.JAN1_2026;
 import static school.hei.asa.model.contract.cas.ContractToCasTest.studentContract;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.List;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.model.InvoiceForm;
 import com.school.luc.model.Worker;
@@ -23,6 +16,13 @@ import com.school.luc.repository.BankAccountRepository;
 import com.school.luc.repository.ContractRepository;
 import com.school.luc.repository.MissionExecutionRepository;
 import com.school.luc.repository.WorkerRepository;
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.List;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 class FinancialPlanServiceIT extends FacadeIT {
 

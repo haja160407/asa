@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.rest.security;
+package com.school.luc.endpoint.rest.security;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

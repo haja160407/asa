@@ -1,4 +1,4 @@
-﻿package com.school.luc.endpoint.event.model;
+package com.school.luc.endpoint.event.model;
 
 import static java.time.LocalDate.now;
 

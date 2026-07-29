@@ -1,16 +1,16 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import com.school.luc.conf.FacadeIT;
+import com.school.luc.model.Worker;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
-import com.school.luc.conf.FacadeIT;
-import com.school.luc.model.Worker;
 
 public class WorkerServiceIT extends FacadeIT {
   @Autowired WorkerService workerService;

@@ -1,14 +1,14 @@
-﻿package com.school.luc.endpoint.rest.controller;
+package com.school.luc.endpoint.rest.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static school.hei.asa.endpoint.rest.controller.health.PingController.OK;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import com.school.luc.PojaGenerated;
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.endpoint.rest.controller.health.HealthDbController;
 import com.school.luc.endpoint.rest.controller.health.PingController;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @PojaGenerated
 class HealthControllerIT extends FacadeIT {

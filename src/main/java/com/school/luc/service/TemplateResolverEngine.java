@@ -1,4 +1,4 @@
-﻿package com.school.luc.service;
+package com.school.luc.service;
 
 import static org.thymeleaf.templatemode.TemplateMode.HTML;
 

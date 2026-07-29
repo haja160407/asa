@@ -1,4 +1,4 @@
-﻿package com.school.luc.number;
+package com.school.luc.number;
 
 import static java.lang.Math.round;
 import static java.util.Locale.FRANCE;

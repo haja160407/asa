@@ -1,7 +1,8 @@
-﻿package com.school.luc.repository;
+package com.school.luc.repository;
 
 import static java.sql.Date.valueOf;
 
+import com.school.luc.repository.model.JMissionExecution;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -9,7 +10,6 @@ import java.util.List;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import com.school.luc.repository.model.JMissionExecution;
 
 @Repository
 public class PsMissionExecutionRepository {

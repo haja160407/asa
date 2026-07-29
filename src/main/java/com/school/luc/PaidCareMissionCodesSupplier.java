@@ -1,4 +1,4 @@
-﻿package com.school.luc;
+package com.school.luc;
 
 import java.util.Arrays;
 import java.util.List;
