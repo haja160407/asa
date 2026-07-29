@@ -1,14 +1,14 @@
 package com.school.luc.endpoint.rest.controller;
 
+import static com.school.luc.model.DailyExecution.Type.fullCare;
+import static com.school.luc.model.DailyExecution.Type.fullWork;
+import static com.school.luc.model.DailyExecution.Type.mixedWorkAndCare;
 import static java.awt.Color.BLUE;
 import static java.awt.Color.GREEN;
 import static java.awt.Color.MAGENTA;
 import static java.awt.Color.RED;
 import static java.time.LocalDate.now;
 import static java.util.stream.Collectors.toMap;
-import static school.hei.asa.model.DailyExecution.Type.fullCare;
-import static school.hei.asa.model.DailyExecution.Type.fullWork;
-import static school.hei.asa.model.DailyExecution.Type.mixedWorkAndCare;
 
 import com.school.luc.endpoint.rest.model.th.ThYear;
 import com.school.luc.endpoint.rest.model.th.WorkerModelAdderParam;

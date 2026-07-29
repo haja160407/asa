@@ -1,13 +1,13 @@
 package com.school.luc.endpoint.rest.service;
 
+import static com.school.luc.conf.EnvConf.DUMMY_CARE_PRODUCT_CODE;
+import static com.school.luc.model.DailyExecution.Type.fullCare;
+import static com.school.luc.model.DailyExecution.Type.fullWork;
+import static com.school.luc.model.DailyExecution.Type.mixedWorkAndCare;
 import static java.time.Month.DECEMBER;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static school.hei.asa.conf.EnvConf.DUMMY_CARE_PRODUCT_CODE;
-import static school.hei.asa.model.DailyExecution.Type.fullCare;
-import static school.hei.asa.model.DailyExecution.Type.fullWork;
-import static school.hei.asa.model.DailyExecution.Type.mixedWorkAndCare;
 
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.endpoint.rest.controller.DailyExecutionController;

@@ -1,8 +1,8 @@
 package com.school.luc.model;
 
-import static school.hei.asa.model.DailyExecution.Type.fullCare;
-import static school.hei.asa.model.DailyExecution.Type.fullWork;
-import static school.hei.asa.model.DailyExecution.Type.mixedWorkAndCare;
+import static com.school.luc.model.DailyExecution.Type.fullCare;
+import static com.school.luc.model.DailyExecution.Type.fullWork;
+import static com.school.luc.model.DailyExecution.Type.mixedWorkAndCare;
 
 import java.time.LocalDate;
 import java.util.HashSet;

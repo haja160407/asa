@@ -26,7 +26,7 @@ public interface JMissionExecutionRepository extends JpaRepository<JMissionExecu
       String workerCode, LocalDate startDate, LocalDate endDate);
 
   @Query(
-      "SELECT new school.hei.asa.repository.model.WorkerDayPercentageSummary("
+      "SELECT new com.school.luc.repository.model.WorkerDayPercentageSummary("
           + "me.worker_code, "
           + "SUM(me.dayPercentage), "
           + "me.reportedAt, "

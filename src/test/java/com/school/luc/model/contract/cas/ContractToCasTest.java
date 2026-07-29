@@ -1,5 +1,8 @@
 package com.school.luc.model.contract.cas;
 
+import static com.school.luc.model.contract.ContractType.fullTimeEmployee;
+import static com.school.luc.model.contract.ContractType.partnerContractor;
+import static com.school.luc.model.contract.ContractType.studentContractor;
 import static gen.patrimoine.modele.Devise.MGA;
 import static java.time.Month.APRIL;
 import static java.time.Month.DECEMBER;
@@ -9,9 +12,6 @@ import static java.time.Month.MARCH;
 import static java.time.Month.MAY;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
-import static school.hei.asa.model.contract.ContractType.fullTimeEmployee;
-import static school.hei.asa.model.contract.ContractType.partnerContractor;
-import static school.hei.asa.model.contract.ContractType.studentContractor;
 
 import com.school.luc.model.Worker;
 import com.school.luc.model.contract.Contract;

@@ -1,11 +1,11 @@
 package com.school.luc.service;
 
+import static com.school.luc.number.NullToBigDecimalHanlder.toBigDecimalOrZero;
+import static com.school.luc.number.NullToBigDecimalHanlder.toDoubleOrZero;
 import static java.time.LocalDate.now;
 import static java.time.ZoneOffset.UTC;
 import static java.util.Comparator.comparing;
 import static java.util.Comparator.naturalOrder;
-import static school.hei.asa.number.NullToBigDecimalHanlder.toBigDecimalOrZero;
-import static school.hei.asa.number.NullToBigDecimalHanlder.toDoubleOrZero;
 
 import com.school.luc.endpoint.event.EventProducer;
 import com.school.luc.endpoint.event.model.NewInvoiceGenerated;

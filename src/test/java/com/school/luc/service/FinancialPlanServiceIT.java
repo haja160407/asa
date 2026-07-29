@@ -1,13 +1,13 @@
 package com.school.luc.service;
 
+import static com.school.luc.model.contract.cas.ContractToCasTest.JAN1_2026;
+import static com.school.luc.model.contract.cas.ContractToCasTest.studentContract;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static school.hei.asa.model.contract.cas.ContractToCasTest.JAN1_2026;
-import static school.hei.asa.model.contract.cas.ContractToCasTest.studentContract;
 
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.model.InvoiceForm;

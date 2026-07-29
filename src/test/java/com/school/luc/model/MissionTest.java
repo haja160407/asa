@@ -1,9 +1,9 @@
 package com.school.luc.model;
 
+import static com.school.luc.model.Mission.Type.paidCare;
+import static com.school.luc.model.Mission.Type.unpaidCare;
+import static com.school.luc.model.Mission.Type.work;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static school.hei.asa.model.Mission.Type.paidCare;
-import static school.hei.asa.model.Mission.Type.unpaidCare;
-import static school.hei.asa.model.Mission.Type.work;
 
 import java.util.List;
 import org.junit.jupiter.api.Test;

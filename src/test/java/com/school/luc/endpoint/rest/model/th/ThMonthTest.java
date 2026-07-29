@@ -1,8 +1,8 @@
 package com.school.luc.endpoint.rest.model.th;
 
+import static com.school.luc.endpoint.rest.model.th.ThMonth.FILLER_DAY;
 import static java.time.Month.DECEMBER;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static school.hei.asa.endpoint.rest.model.th.ThMonth.FILLER_DAY;
 
 import java.time.YearMonth;
 import java.util.List;

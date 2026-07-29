@@ -1,10 +1,10 @@
 package com.school.luc.endpoint.rest.controller;
 
+import static com.school.luc.model.contract.ContractType.studentContractor;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
-import static school.hei.asa.model.contract.ContractType.studentContractor;
 
 import com.school.luc.conf.FacadeIT;
 import com.school.luc.endpoint.rest.model.th.ThWorker;

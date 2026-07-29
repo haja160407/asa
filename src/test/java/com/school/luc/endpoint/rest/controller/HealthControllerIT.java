@@ -1,7 +1,7 @@
 package com.school.luc.endpoint.rest.controller;
 
+import static com.school.luc.endpoint.rest.controller.health.PingController.OK;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static school.hei.asa.endpoint.rest.controller.health.PingController.OK;
 
 import com.school.luc.PojaGenerated;
 import com.school.luc.conf.FacadeIT;

@@ -36,7 +36,7 @@ public class CalendarService {
             dailyExecutionRepository.findByWorkerCodeAndDateBetween(
                 worker.code(), LocalDate.of(year, JANUARY, 1), LocalDate.of(year, DECEMBER, 31)),
             year,
-            new school.hei.asa.model.ProductConf(
+            new com.school.luc.model.ProductConf(
                 careProductCodeSupplier.get(), paidCareMissionCodesSupplier.get()))
         .datesByDailyExecutionType();
   }
@@ -49,7 +49,7 @@ public class CalendarService {
             dailyExecutionRepository.findByWorkerCodeAndDateBetween(
                 worker.code(), LocalDate.of(year, JANUARY, 1), LocalDate.of(year, DECEMBER, 31)),
             year,
-            new school.hei.asa.model.ProductConf(
+            new com.school.luc.model.ProductConf(
                 careProductCodeSupplier.get(), paidCareMissionCodesSupplier.get()))
         .missionExecutionPercentageSumByMissionType();
   }
@@ -61,7 +61,7 @@ public class CalendarService {
             dailyExecutionRepository.findByWorkerCodeAndDateBetween(
                 worker.code(), LocalDate.of(year, JANUARY, 1), LocalDate.of(year, DECEMBER, 31)),
             year,
-            new school.hei.asa.model.ProductConf(
+            new com.school.luc.model.ProductConf(
                 careProductCodeSupplier.get(), paidCareMissionCodesSupplier.get()))
         .lateReportedDaysByMonth();
   }

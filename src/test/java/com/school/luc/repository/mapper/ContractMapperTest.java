@@ -1,8 +1,8 @@
 package com.school.luc.repository.mapper;
 
+import static com.school.luc.model.contract.ContractType.studentContractor;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
-import static school.hei.asa.model.contract.ContractType.studentContractor;
 
 import com.school.luc.model.DailyExecution;
 import com.school.luc.model.Worker;

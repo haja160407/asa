@@ -1,10 +1,10 @@
 package com.school.luc.service;
 
+import static com.school.luc.model.DailyExecution.Type.fullCare;
+import static com.school.luc.model.DailyExecution.Type.fullWork;
 import static java.time.ZoneId.systemDefault;
 import static java.util.Locale.FRENCH;
 import static java.util.Locale.US;
-import static school.hei.asa.model.DailyExecution.Type.fullCare;
-import static school.hei.asa.model.DailyExecution.Type.fullWork;
 
 import com.school.luc.CareProductCodeSupplier;
 import com.school.luc.model.DailyExecution;

@@ -1,12 +1,12 @@
 package com.school.luc.model.contract.cas;
 
+import static com.school.luc.model.contract.cas.ContractToCasTest.DEC31_2026;
+import static com.school.luc.model.contract.cas.ContractToCasTest.JAN1_2026;
+import static com.school.luc.model.contract.cas.ContractToCasTest.partnerContract;
+import static com.school.luc.model.contract.cas.ContractToCasTest.studentContract;
 import static gen.patrimoine.modele.Devise.MGA;
 import static java.time.Month.FEBRUARY;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static school.hei.asa.model.contract.cas.ContractToCasTest.DEC31_2026;
-import static school.hei.asa.model.contract.cas.ContractToCasTest.JAN1_2026;
-import static school.hei.asa.model.contract.cas.ContractToCasTest.partnerContract;
-import static school.hei.asa.model.contract.cas.ContractToCasTest.studentContract;
 
 import gen.patrimoine.modele.Argent;
 import gen.patrimoine.modele.possession.Compte;
