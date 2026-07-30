@@ -18,9 +18,6 @@ public class CookieOAuth2AuthorizationRequestRepository
   public static final String OAUTH2_AUTH_REQUEST_COOKIE_NAME = "OAUTH2_AUTH_REQUEST";
   private static final int COOKIE_EXPIRE_SECONDS = 180; // 3 minutes
 
-  @org.springframework.beans.factory.annotation.Value("${SECURE_COOKIE:true}")
-  private boolean secureCookie;
-
   @Override
   public OAuth2AuthorizationRequest loadAuthorizationRequest(HttpServletRequest request) {
     Cookie cookie = WebUtils.getCookie(request, OAUTH2_AUTH_REQUEST_COOKIE_NAME);
@@ -43,7 +40,7 @@ public class CookieOAuth2AuthorizationRequestRepository
     Cookie cookie = new Cookie(OAUTH2_AUTH_REQUEST_COOKIE_NAME, value);
     cookie.setPath("/");
     cookie.setHttpOnly(true);
-    cookie.setSecure(secureCookie);
+    cookie.setSecure(true);
     cookie.setMaxAge(COOKIE_EXPIRE_SECONDS);
     // SameSite=Lax is enough for top-level redirect from Casdoor
     cookie.setAttribute("SameSite", "Lax");
@@ -62,7 +59,7 @@ public class CookieOAuth2AuthorizationRequestRepository
     Cookie cookie = new Cookie(OAUTH2_AUTH_REQUEST_COOKIE_NAME, "");
     cookie.setPath("/");
     cookie.setHttpOnly(true);
-    cookie.setSecure(secureCookie);
+    cookie.setSecure(true);
     cookie.setMaxAge(0);
     cookie.setAttribute("SameSite", "Lax");
     response.addCookie(cookie);
