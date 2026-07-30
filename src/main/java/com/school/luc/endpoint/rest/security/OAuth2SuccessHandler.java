@@ -51,7 +51,7 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
       }
     }
     if (!hasRole) {
-      log.warn("User {} lacks org_collaborator role", String.valueOf(principal.getAttribute("email")));
+      log.warn("User {} lacks org_collaborator role", principal.getAttribute("email"));
       response.sendRedirect("/?error=unauthorized_role");
       return;
     }
