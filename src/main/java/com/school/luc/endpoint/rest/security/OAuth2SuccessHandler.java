@@ -26,8 +26,8 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
     var principal = (DefaultOidcUser) authentication.getPrincipal();
     var workerOpt = workerFromAuthentication.apply(authentication);
     if (workerOpt.isEmpty()) {
-      throw new RuntimeException(
-          "Email does not correspond to a known worker: " + principal.getEmail());
+      response.sendRedirect("/?error=unknown_worker");
+      return;
     }
 
     var roles = principal.getAttributes().get("roles");
@@ -39,8 +39,8 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
                 .map(map -> ((String) map.get("name")).toLowerCase(Locale.ROOT))
                 .anyMatch("org_collaborator"::equals);
     if (!hasRole) {
-      throw new RuntimeException(
-          "User doesn't have correct roles: " + principal.getAttribute("email"));
+      response.sendRedirect("/?error=unauthorized_role");
+      return;
     }
     super.onAuthenticationSuccess(request, response, authentication);
   }
