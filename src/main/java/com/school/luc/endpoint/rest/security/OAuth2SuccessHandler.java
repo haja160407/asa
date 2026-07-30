@@ -5,7 +5,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
-
 import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -43,7 +42,8 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
           hasRole = true;
           break;
         }
-        if (item instanceof Map<?, ?> map && map.get("name") instanceof String s
+        if (item instanceof Map<?, ?> map
+            && map.get("name") instanceof String s
             && s.equalsIgnoreCase("org_collaborator")) {
           hasRole = true;
           break;
