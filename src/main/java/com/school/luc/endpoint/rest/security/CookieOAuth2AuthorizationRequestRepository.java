@@ -40,7 +40,7 @@ public class CookieOAuth2AuthorizationRequestRepository
     Cookie cookie = new Cookie(OAUTH2_AUTH_REQUEST_COOKIE_NAME, value);
     cookie.setPath("/");
     cookie.setHttpOnly(true);
-    cookie.setSecure(true);
+    cookie.setSecure(request.isSecure());
     cookie.setMaxAge(COOKIE_EXPIRE_SECONDS);
     // SameSite=Lax is enough for top-level redirect from Casdoor
     cookie.setAttribute("SameSite", "Lax");
@@ -59,7 +59,7 @@ public class CookieOAuth2AuthorizationRequestRepository
     Cookie cookie = new Cookie(OAUTH2_AUTH_REQUEST_COOKIE_NAME, "");
     cookie.setPath("/");
     cookie.setHttpOnly(true);
-    cookie.setSecure(true);
+    cookie.setSecure(request.isSecure());
     cookie.setMaxAge(0);
     cookie.setAttribute("SameSite", "Lax");
     response.addCookie(cookie);
